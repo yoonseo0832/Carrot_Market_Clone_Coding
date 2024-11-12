@@ -26,12 +26,34 @@ header .logo img{
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .main-nav a{
-    color: #333;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+.main-nav a:hover{
+    color: #fff;
+}
+
+.main-nav a:not(hover){
+    color: #333;
+}
+
+.job-select{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
 }
 
 .sub-button a{
