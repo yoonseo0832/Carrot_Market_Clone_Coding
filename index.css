@@ -60,3 +60,149 @@ header .logo img{
     color: #333;
 }
 
+.search-bar, .category input[type="text"], .search-bar button{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button{
+    background-color: #ff7e36;
+    color: white;
+    cursor: pointer;
+}
+
+.popular-searches{
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.popular-searches span{
+    margin-right: 8px;
+    color: #333;
+}
+
+.banner-section{
+    background-color: #ffe3c0;
+    padding: 40px 20px;
+    text-align: center;
+}
+.banner-section h2{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.banner-section h4{
+    font-size: 1rem;
+    color: #555;
+}
+
+.banner-image img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.popular-category{
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-category h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cotagory-item{
+    background-color: #e5e5e5;
+    padding: 10px 20px;
+    border-radius: 50%;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.download-section img{
+    width: 120px;
+    margin: 10px;
+}
+
+footer{
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo img{
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-section{
+    margin: 0 20px;
+}
+
+.footer-section h4{
+    font-size: 1rem;
+    font-weight: blod;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li{
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a{
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover{
+    text-decoration: underline;
+    color: #666;
+}
+
+.footer-bottom{
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.footer-bottom p{
+    margin: 5px 0;
+}
