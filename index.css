@@ -1,41 +1,55 @@
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     font-family:Arial, Helvetica, sans-serif;
     color:#333;
+    max-width: 1920px;
+    background-color: #fff;
+    margin: 0 auto;
 }
 
 header{
     background-color: #fff;
-    padding:15px 20px;
-    display:flex;
+    padding: 20px 60px;
+    display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #ddd;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
-header .logo img{
-    height: 40px;
+.logo img{
+    height: auto;
+    width: 64px;
 }
 
 .main-nav ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     padding: 0;
     margin: 0;
 }
 
-.main-nav a{
-    color: #333;
+.main-nav ul li{
+    position: relative;
+}
+
+.main-nav ul li a{
     text-decoration: none;
+    color: #333;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 16px;
     padding: 5px 10px;
+    transition: color 0.3s;
 }
 
 .job-drop{
