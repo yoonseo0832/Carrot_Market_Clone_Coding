@@ -10,8 +10,11 @@ body{
     max-width: 1980px;
     background-color: #fff;
     margin-top: 80px;
-    margin: 0 auto;
     padding-top: 80px;
+}
+
+.container {
+    max-width: 1200px;
 }
 
 .header{
@@ -40,8 +43,12 @@ body{
     width: 150px;
 }
 
+.header-menu{
+    display: flex;
+    gap: 15px;
+}
+
 .header-menu a{
-    margin: 0 15px;
     color: #333;
     text-decoration: none;
     font-weight: bold;
@@ -58,7 +65,7 @@ body{
 }
 
 .sub-menu{
-    display: flex;
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -72,12 +79,10 @@ body{
     width: 150px;
 }
 
-.sub-menu a {
-    display: block;
+.sub-menu a{
     padding: 8px;
     color: #333;
     font-weight: normal;
-    text-decoration: none;
 }
 
 .header-menu .sub-menu a{
@@ -91,10 +96,6 @@ body{
 .header-menu .sub-menu a:hover{
     background-color: #f8f8f8;
     color: #ff7e35;
-}
-
-.header-menu a:hover + .sub-menu{
-    display: block;
 }
 
 .search-bar{
@@ -112,6 +113,9 @@ body{
     background-color: #fffbe6;
     display: flex;
     align-items: center;
+    max-width: 1200px;
+    margin-top: 10px;
+
 }
 
 .search-label{
@@ -139,8 +143,7 @@ body{
     justify-content: center;
     padding: 60px 20px;
     background-color: #ffefb8;
-    max-width: 1980px;
-    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .banner-content h1{
@@ -151,7 +154,7 @@ body{
 }
 
 .banner-content p{
-    font-size: 0.5rem;
+    font-size: 1rem;
     color: #666;
     margin-top: 10px;
 }
@@ -166,6 +169,7 @@ body{
     background-color: #ffffff;
     margin-top: 20px;
     text-align: center;
+    margin: 20px auto;
 }
 
 .categories h2 {
@@ -178,8 +182,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 40px;
-    max-width: 1980px;
-    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .category-item {
@@ -204,6 +207,8 @@ body{
     justify-content: space-between;
     padding: 30px 20px;
     background-color: #ffebd0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .adver-content h3 {
@@ -225,7 +230,7 @@ body{
 }
 
 .app-image {
-    flex: 1;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,6 +239,7 @@ body{
 .app-image img {
     max-width: 150px;
     height: auto;
+    position: absolute;
     margin-right: 10px;
 }
 
@@ -247,8 +253,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1980px;
-    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .footer-section h4{
@@ -271,15 +276,24 @@ body{
     color: #333;
 }
 
+.footer-sections .footer-section:nth-child(1),
+.footer-sections .footer-section:nth-child(2),
+.footer-sections .footer-section:nth-child(3),
+.footer-sections .footer-section:nth-child(4) {
+    flex: 1 1 25%;
+}
+
+.footer-sections .footer-section:nth-child(5) {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
 .footer-bottom{
-    text-align: left;
+    text-align: center;
     font-size: 0.8rem;
     color: #999;
     margin-top: 20px;
     padding: 20px 0;
     border-top: 1px solid #ddd;
-}
-
-.footer-bottom p{
-    margin: 5px 0;
 }
