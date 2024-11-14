@@ -30,7 +30,7 @@ body{
 }
 
 .header-logo img{
-    width: 150px;
+    width: 120px;
 }
 
 .header-menu a{
@@ -89,6 +89,7 @@ body{
     background-color: #fffbe6;
     display: flex;
     align-items: center;
+    margin-top: 80px;
 }
 
 .search-label{
@@ -131,7 +132,7 @@ banner-content p{
 }
 
 .banner-image img{
-    width: 100%;
+    width: 80%;
     max-width: 400px;
     height: auto;
 }
@@ -157,13 +158,13 @@ banner-content p{
 
 .category-item {
     text-align: center;
-    width: 80px;
+    width: 100px;
 }
 
 .category-item img {
-    width: 50px;
+    width: 60px;
     height: auto;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .category-item p {
@@ -196,8 +197,14 @@ banner-content p{
     width: 120px;
 }
 
+.app-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .app-image img {
-    width: 100%;
     max-width: 150px;
     height: auto;
     margin-right: 10px;
