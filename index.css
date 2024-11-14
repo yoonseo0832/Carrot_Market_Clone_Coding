@@ -115,7 +115,7 @@ body{
     align-items: center;
     max-width: 1200px;
     margin-top: 10px;
-
+    margin: 0 auto;
 }
 
 .search-label{
@@ -128,13 +128,18 @@ body{
     padding: 5px 10px;
     background-color: #ff7e35;
     color: #fff;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 15px;
     cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
 
 .search-item:hover{
-    text-decoration: underline;
+    text-decoration: underline; 
+    background-color: #ff7e35;
+    color: #fff;
+    text-decoration: none;
 }
 
 .banner{
