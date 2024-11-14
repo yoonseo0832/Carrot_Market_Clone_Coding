@@ -7,18 +7,17 @@
 
 body{
     color:#333;
-    max-width: 1920px;
+    max-width: 1200px;
     background-color: #fff;
     margin: 0 auto;
 }
 
 .header{
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
     border-bottom: 1px solid #ddd;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 10;
 }
@@ -27,10 +26,13 @@ body{
     justify-content: space-between;
     align-items: center;
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 .header-logo img{
-    width: 120px;
+    width: 150px;
 }
 
 .header-menu a{
@@ -114,31 +116,33 @@ body{
 .banner{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px 20px;
+    justify-content: center;
+    padding: 60px 20px;
     background-color: #ffefb8;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .banner-content h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #333;
-    line-height: 1.5;
+    line-height: 1.4;
+    margin-right: 40px;
 }
 
-banner-content p{
-    font-size: 1rem;
+.banner-content p{
+    font-size: 1.2rem;
     color: #666;
     margin-top: 10px;
 }
 
 .banner-image img{
-    width: 80%;
-    max-width: 400px;
+    width: 400px;
     height: auto;
 }
 
 .categories{
-    padding: 20px;
+    padding: 50px 20px;
     background-color: #ffffff;
     margin-top: 20px;
     text-align: center;
@@ -153,7 +157,9 @@ banner-content p{
 .category-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .category-item {
@@ -162,7 +168,7 @@ banner-content p{
 }
 
 .category-item img {
-    width: 60px;
+    width: 80px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -220,6 +226,8 @@ banner-content p{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-section h4{
@@ -238,7 +246,7 @@ banner-content p{
     font-size: 0.9rem;
 }
 
-.footer-section ul li a :hover{
+.footer-section ul li a:hover{
     color: #333;
 }
 
@@ -247,6 +255,8 @@ banner-content p{
     font-size: 0.8rem;
     color: #999;
     margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
 }
 
 .footer-bottom p{
