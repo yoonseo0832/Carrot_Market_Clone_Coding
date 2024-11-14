@@ -149,7 +149,7 @@ body{
 }
 
 .banner-content p{
-    font-size: 3rem;
+    font-size: 1rem;
     color: #666;
     margin-top: 10px;
 }
@@ -214,6 +214,7 @@ body{
     font-size: 2rem;
     color: #333;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .app-buttons img {
