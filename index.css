@@ -15,15 +15,16 @@ header{
     background-color: #fff;
     position: fixed;
     border-bottom: 1px solid #ddd;
-    padding: 15px 30px;
-    max-width: 1980px;
+    padding: 15px 50px;
+    width: 100%;
 }
 
 .header-container{
-    max-width: 1980px;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
 }
 
 .logo img{
@@ -152,28 +153,28 @@ nav a:hover + .sub-menu, .sub-menu:hover{
 .banner{
     display: flex;
     align-items: center;
-    max-width: 1980px;
     justify-content: space-between;
-    padding: 50px;
+    padding: 60px 50px;
     background-color: #ffeab5;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .banner-text h1 {
-    font-size: 36px;
+    font-size: 40px;
     color: #111;
     line-height: 1.4;
 }
 
 .banner-text p {
     font-size: 14px;
-    color: #333;
+    color: #222;
     margin-top: 10px;
 }
 
 .banner-content img {
-    max-width: 600px;
-    height: 300px;
+    max-width: 500px;
+    height: auto;
+    margin-left: 20px;
 }
 
 .categories {
@@ -190,8 +191,10 @@ nav a:hover + .sub-menu, .sub-menu:hover{
 
 .category-list {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .category-item {
@@ -216,11 +219,11 @@ nav a:hover + .sub-menu, .sub-menu:hover{
 
 .app-adver {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 50px;
+    gap: 20px;
     background-color: #ffefe0;
-    text-align: center;
 }
 
 .app-text h2 {
@@ -263,13 +266,14 @@ footer{
     background-color: #fff;
     padding: 40px 0;
     border-top: 1px solid #ddd;
+    text-align: center;
 }
 
 .footer-container{
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -281,7 +285,6 @@ footer{
 .footer-links h4 {
     font-size: 16px;
     color: #333;
-    margin-bottom: 10px;
 }
 
 .footer-links ul {
