@@ -24,7 +24,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
 }
 
 .logo img{
@@ -43,6 +42,7 @@ nav a{
     text-decoration: none;
     padding: 10px;
     position: relative;
+    font-weight: bold;
 }
 
 .sub-menu{
@@ -79,7 +79,7 @@ nav a:hover + .sub-menu, .sub-menu:hover{
     padding: 8px 12px;
     border: none;
     border-radius: 5px;
-    cursor: poiner;
+    cursor: pointer;
     font-size: 16px;
 }
 
