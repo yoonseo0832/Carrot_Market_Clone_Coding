@@ -172,13 +172,13 @@ nav a:hover + .sub-menu, .sub-menu:hover{
 }
 
 .banner-content img {
-    max-width: 800px;
-    height: auto;
+    max-width: 600px;
+    height: 300px;
 }
 
 .categories {
     padding: 30px;
-    text-align: left;
+    text-align: center;
     background-color: #fff;
 }
 
@@ -240,8 +240,8 @@ nav a:hover + .sub-menu, .sub-menu:hover{
 }
 
 .app-button img {
-    height: 50px;
-    width: 180px;
+    height: 40px;
+    width: auto;
 }
 
 .app-content-1 img {
@@ -267,6 +267,7 @@ footer{
 
 .footer-container{
     max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
