@@ -206,19 +206,23 @@ nav a:hover + .sub-menu, .sub-menu:hover{
 
 .category-item {
     text-align: center;
-    width: 100px;
+    width: 180px;
 }
 
 .category-item img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    padding: 10px;
+    object-fit: cover;
     border: 1px solid #ddd;
+    background-color: #fff;
 }
 
 .category-item p {
     font-size: 14px;
     color: #333;
+    margin-top: 10px;
 }
 
 .app-adver {
