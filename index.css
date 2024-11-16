@@ -2,40 +2,44 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body{
     color:#333;
     max-width: 1980px;
     background-color: #f9f9f9;
+    line-height: 1.5;
 }
 
 .container{
     width: 1148px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 header{
     background-color: #fff;
     position: fixed;
+    display: flex;
     align-items: center;
+    border-bottom: 1px solid #ddd;
     justify-content: space-between;
     padding: 20px 0;
     width: 100%;
 }
 
-.logo img{
+header .logo img{
     width: 64px;
 }
 
-nav{
+header nav{
     display: inline-block;
     align-items: center;
     position: relative;
 }
 
-nav a{
+header nav a{
     color: #333;
     font-size: 16px;
     text-decoration: none;
@@ -273,10 +277,6 @@ footer{
 .footer-links h4 {
     font-size: 16px;
     color: #333;
-}
-
-.footer-links ul {
-    list-style: none;
 }
 
 .footer-links ul li {
