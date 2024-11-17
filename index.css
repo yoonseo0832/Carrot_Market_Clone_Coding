@@ -40,34 +40,42 @@ header nav{
 }
 
 header nav a{
-    color: #333;
+    color: #111;
     font-size: 16px;
     text-decoration: none;
     padding: 10px;
     position: relative;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover{
+    color: #111;
+}
+
+header nav a:hover ~ a,
+header nav a:not(:hover){
+    color: #999;
 }
 
 .sub-menu{
-    display: grid;
+    display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    z-index: 10;
 }
 
-nav a:hover + .sub-menu, .sub-menu:hover{
+.with-submenu:hover + .sub-menu{
     display: block;
 }
 
 .sub-menu a{
     display: block;
-    padding: 10px;
-    color: #333;
+    padding: 5px 10px;
+    color: #111;
     font-size: 12px;
     text-decoration-line: none;
 }
