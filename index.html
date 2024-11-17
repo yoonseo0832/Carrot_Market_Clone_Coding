@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>Karrot market</title>
+    <title>당신 근처의 당근</title>
 </head>
 <body>
-    <div class="container">
+    <div class="header-container">
         <header>
             <div class="logo">
                 <img src="http://www.w3.org/2000/svg" alt="당근마켓 로고" >
@@ -31,16 +31,24 @@
                 <a href="#">앱 다운로드</a>
             </button>
         </header>
+    </div>
+    <div class="search-container">
         <section class="location">
             <a href="#">유성구</a>
         </section>
         <section class="search-bar">
-            <button>중고거래</button>
+            <a href="#" class="with-seacrh-menu">중고거래</a>
+            <div class="search-submenu">
+                <a href="#">동네업체</a>
+                <a href="#">알바</a>
+                <a href="#">중고차</a>
+                <a href="#">부동산</a>
+            </div>
             <input type="text" placeholder="검색어를 입력해주세요">
         </section>
         <section class="popular-searches">
             <nav>
-                <p>인기 검색어</p>
+                <p>인기 검색어
                 <a href="#" class="search-item">아이폰</a>
                 <a href="#" class="search-item">의자</a>
                 <a href="#" class="search-item">자전거</a>
@@ -51,8 +59,11 @@
                 <a href="#" class="search-item">전기자전거</a>
                 <a href="#" class="search-item">식탁</a>
                 <a href="#" class="search-item">모니터</a>
+                </p>
             </nav>
         </section>
+    </div>
+    <div class="banner-container">
         <section class="banner">
             <div class="banner-text">
                 <h1>믿을만한<br>이웃 간 중고거래</h1>
@@ -62,6 +73,8 @@
                 <img src="https://karrotmarket-com-sanity-cdn.krrt.io/production/56e986c736d6e4f5526448a7a408a0b8f370394e-1125x930.png" alt="이미지">
             </div>
         </section>
+    </div>
+    <div class="category-container">
         <section class="categories">
             <h2>인기 카테고리</h2>
             <div class="category-list">
@@ -91,6 +104,8 @@
                 </div>
             </div>
         </section>
+    </div>
+    <div class="app-container">
         <section class="app-adver">
             <div class="app-text">
                 <h2>당근에서 가까운 이웃과 함께해요.</h2>
@@ -110,6 +125,8 @@
                 <img src="https://karrotmarket-com-sanity-cdn.krrt.io/production/7e3238a9040150bf3b4e5cd41dae1482a6353412-798x298.png" alt="app-image-3">
             </div>
         </section>
+    </div>
+    <div class="footer-container">
         <footer>
             <div class="footer-links">
                 <h4>회사</h4>
@@ -166,7 +183,7 @@
                 <p>호스팅 사업자 Amazon Web Service(AWS)<br></p>
                 <p>주소 서울특별시 구로구 디지털로30길 28, 609호(당근서비스)<br></p>
                 <p>전화 1544-9796 | 고객문의 cs@daangnservice.com<br></p>
-                <p>이용약관 | 개인정보처리방침 | 운영정책 | 위치기반서비스 이용약관 | 청소년보호정책</p>
+                <p>이용약관</p> <p>개인정보처리방침</p>  <p>운영정책</p>  <p>위치기반서비스</p> <p>이용약관</p>  <p>청소년보호정책</p>
             </div>
         </footer>
     </div>
