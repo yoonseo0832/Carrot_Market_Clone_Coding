@@ -29,8 +29,15 @@ header{
     width: 80%;
 }
 
-header .logo img{
-    width: 64px;
+header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo svg{
+    width: 120px;
+    height: auto;
 }
 
 header nav{
