@@ -8,14 +8,13 @@
 body{
     color:#333;
     max-width: 1980px;
-    background-color: #f9f9f9;
+    background-color: #fff;
     line-height: 1.5;
 }
 
 .container{
-    width: 1148px;
+    width: 1980px;
     padding: 0 15px;
-    margin: 0 auto;
 }
 
 header{
@@ -37,6 +36,7 @@ header nav{
     display: inline-block;
     align-items: center;
     position: relative;
+    margin: auto;
 }
 
 header nav a{
