@@ -27,7 +27,7 @@ header{
     background-color: #fff;
     position: fixed;
     display: flex;
-    max-width: 1200px;
+    max-width: 1980px;
     align-items: center;
     border-bottom: 1px solid #ddd;
     justify-content: space-between;
@@ -105,7 +105,7 @@ nav a.with-submenu:hover + .sub-menu{
 }
 
 .app-download-button{
-    background-color: #daad95;
+    background-color: #ff7e36;
     padding: 8px 16px;
     border: none;
     cursor: pointer;
@@ -117,10 +117,6 @@ nav a.with-submenu:hover + .sub-menu{
     color: #ff7e36;
     font-size: 16px;
     text-decoration: none;
-}
-
-.app-download-button a:hover{
-    background-color: #e28655;
 }
 
 .location{
