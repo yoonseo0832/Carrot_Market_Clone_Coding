@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-    width: 1980px;
+    width: 1200px;
     padding: 0 15px;
 }
 
@@ -25,7 +25,7 @@ header{
     border-bottom: 1px solid #ddd;
     justify-content: space-between;
     padding: 20px 0;
-    width: 100%;
+    width: 80%;
 }
 
 header .logo img{
@@ -33,7 +33,7 @@ header .logo img{
 }
 
 header nav{
-    display: inline-block;
+    display: flex;
     align-items: center;
     position: relative;
     margin: auto;
@@ -46,7 +46,7 @@ header nav a{
     padding: 10px;
     position: relative;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 header nav a:hover{
@@ -75,7 +75,7 @@ header nav a:not(:hover){
 .sub-menu a{
     display: block;
     padding: 5px 10px;
-    color: #111;
+    color: #333;
     font-size: 12px;
     text-decoration-line: none;
 }
