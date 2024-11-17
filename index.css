@@ -13,7 +13,7 @@ body{
 }
 
 .header-container{
-    max-width: 1200px;
+    max-width: 1980px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -97,7 +97,6 @@ header nav:hover a{
 .app-download-button{
     background-color: #daad95;
     padding: 8px 12px;
-    border-radius: 5px;
     cursor: pointer;
     position: absolute;
     top: 50%;
