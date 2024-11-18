@@ -15,7 +15,7 @@ header{
     display: flex;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
-    width: 80%;
+    width: 100%;
     justify-content: space-around;
 }
 
@@ -27,7 +27,7 @@ header .logo{
 
 header .logo svg{
     width: 80px;
-    height: auto;
+    height: 30px;
 }
 
 header nav{
@@ -274,10 +274,6 @@ nav a.with-submenu:hover + .sub-menu{
     position: relative;
 }
 
-.app-text {
-    flex: 1;
-}
-
 .app-text h2 {
     font-size: 20px;
     font-weight: bold;
@@ -289,7 +285,6 @@ nav a.with-submenu:hover + .sub-menu{
     font-size: 36px;
     font-weight: bold;
     color: #333; 
-    line-height: 1.4;
 }
 
 .app-button {
@@ -304,7 +299,6 @@ nav a.with-submenu:hover + .sub-menu{
 }
 
 .app-content {
-    flex: 1;
     display: flex;
     justify-content:left;
     align-items: center;
