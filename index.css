@@ -219,7 +219,9 @@ nav a.with-submenu:hover + .sub-menu{
 }
 
 .main-container{
-    
+    display: block;
+    height: 1200px;
+    width: 850px;
 }
 
 .banner{
@@ -231,19 +233,18 @@ nav a.with-submenu:hover + .sub-menu{
     width: 100%;
     background-color: #ffeab5;
     width: 1000px;
-    flex-direction: column;
 }
 
 .banner-text{
     flex: 1;
     padding-right: 30px;
+    flex-direction: column;
 }
 
 .banner-text h1 {
     font-size: 26px;
     color: #333;
-    box-sizing: border-box;
-    display: block;
+    display: flex;
     line-height: 35px;
     font-weight: 700;
     margin-top: 28px;
@@ -252,8 +253,7 @@ nav a.with-submenu:hover + .sub-menu{
 
 .banner-text p {
     font-size: 15px;
-    box-sizing: border-box;
-    display: none;
+    display: flex;
     font-weight: 700;
     line-height: 22px;
     width: auto;
