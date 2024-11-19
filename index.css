@@ -7,12 +7,16 @@
 
 body{
     max-width: 1980px;
+    display: block;
     background-color: #fff;
+    border: 0;
+    line-height: 21px;
+    width: 550px;
 }
 
 header{
     position: fixed;
-    display: flex;
+    display: block;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     width: 100%;
@@ -22,7 +26,6 @@ header{
     padding: 1rem;
     margin: 0;
     top: 0;
-    box-sizing: border-box;
 }
 
 header .logo{
@@ -38,18 +41,15 @@ header .logo svg{
 }
 
 header nav{
-    display: block;
+    display: flex;
     align-items: center;
     position: relative;
-    gap: 0 20px;
-    margin: 10px;
+    gap: 20px;
 }
 
 nav a{
     color: #111;
     font-size: 16px;
-    padding: 12px 8px;
-    text-decoration: none;
     position: relative;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -101,14 +101,13 @@ nav a.with-submenu:hover + .sub-menu{
 }
 
 .app-download-button{
-    background-color: #ff6f0f24;
+    background-color: #d8c1b2;
     border: none;
-    box-sizing: border-box;
     cursor: pointer;
     position: relative;
-    border-radius: 10px;
-    display: inline-flex;
-    justify-content: center;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
 }
 
 .app-download-button a{
@@ -120,83 +119,102 @@ nav a.with-submenu:hover + .sub-menu{
     text-decoration: none;
 }
 
+.app-download-button:hover{
+    background-color: #cc8f66;
+}
+
 .search-container{
-    width: 1050px;
+    width: 870px;
     box-sizing: border-box;
     display: block;
-    padding: 15px 20px;
+    padding: 0px 40px;
     max-width: 1400px;
-    padding: 0px 64px;
+    margin-inline: auto;
     background-color: #fff;
 }
 
 .location{
     margin-right: 16px;
-    display: flex;
-    border-radius: 20px;
-    box-sizing: border-box;
+    display: block;
 }
 
 .location a{
     font-size: 16px;
+    height: 42px;
+    border-radius: 21px;
     color: #333;
-    text-decoration: none;
+    align-items: center;
     font-size: bold;
-    padding: 8px 12px;
-    background-color: #f1f3f5;
-    position: relative;
+    padding: 0px 16px;
+    display: flex;
+    cursor: pointer;
+    background-color: #f2f3f6;
+}
+
+.location img{
+    width: 16px;
+    height: 16px;
+}
+
+.search-others{
+    display: flex;
+    border: 1px solid #ddd;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .search-bar{
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;
-    gap: 10px;
+    max-width: 1400px;
+    background-color: #fff;
 }
 
-.search-bar input[type="text"]{
-    padding: 12px 42px 12px 12px;
-    box-sizing: border-box;
-    cursor: text;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 18px;
-    height: 42px;
-    font-weight: 400;
+.search-bar-button{
+    padding: 10px;
+    cursor: pointer;
+    border-right: 1px solid #ddd;
+}
+
+.search-bar-input{
+    padding: 7px 10px;
+    flex-grow: 1;
+}
+
+.search-bar-input input{
+    padding: 7px;
+    font-size: 14px;
+    border: none;
+}
+
+.search-icon{
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-icon:hover{
+    background-color: #bebebe;
+}
+
+.search-icon img{
+    width: 16px;
+    height: 16px;
+    background: none;
 }
 
 .popular-searches{
-    margin: -2px;
-    padding: 40px 10px;
-    box-sizing: border-box;
-    display: block;
+    font-size: 14px;
+    color: #111;
+    display: flex;
     position: relative;
 }
-
-.popular-searches nav{
-    padding: 12px 0px 12px 6px;
-    display: inline-flex;
-    box-sizing: border-box;
+.popular-searches nav a{
+    color: #777;
+    text-decoration: none;
 }
 
-.popular-searches nav p{
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    display: block;
-    margin-right: 16px;
-}
-
-.popular-searches nav .search-item{
-    align-items: center;
-    box-sizing: border-box;
-    line-height: 20px;
-    font-size: 14px;
-    display: flex;
-    color: #555;
-}
-
-.popular-searches nav .search-item:hover{
+.popular-searches nav a:hover{
     text-decoration: underline; 
 }
 
