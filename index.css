@@ -435,6 +435,7 @@ nav a.with-submenu:hover + .sub-menu{
 
 .footer-links ul li a:hover{
     color: #777;
+    text-decoration: none;
 }
 
 .footer-left{
