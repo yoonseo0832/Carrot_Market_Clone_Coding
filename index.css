@@ -68,15 +68,11 @@ header{
     position: relative;
 }
 
-.with-submenu:hover .sub-menu{
-    display: block;
-}
-
-.sub-menu{
+.with-submenu .sub-menu{
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 60px;
+    left: 912px;
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 10px;
@@ -85,13 +81,18 @@ header{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.with-submenu:hover .sub-menu{
+    display: block;
+}
+
 .sub-menu a{
     display: block;
-    font-size: 14px;
+    font-size: 10px;
     cursor: pointer;
     text-align: left;
     margin-bottom: 5px;
     text-decoration: none;
+    padding: 5px 10px;
     color: #333;
 }
 
@@ -316,23 +317,28 @@ header{
 }
 
 .app-text{
-    text-align: left;
+    align-items: center;
+    display: flex; 
     height: 400px;
     padding: 100px 250px;
+    justify-content: space-between;
     background-color: #fff7e6;
 }
 
 .app-text h2{
-    font-size: 30px;
+    font-size: 27px;
     color: #ff6f0f;
     font-weight: 700;
+    text-align: left;
+    margin-bottom: 15px;
 }
 
 .app-text h1{
-    font-size: 45px;
+    font-size: 40px;
     color: #333;
     font-weight: 700;
-    margin-bottom: 15px;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .app-button{
@@ -342,6 +348,42 @@ header{
 
 .app-button a img{
     width: 120px;
+}
+
+.app-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.app-image-1, .app-image-2, .app-image-3 {
+    position: absolute; 
+}
+
+.app-image-1 {
+    top: 10%;
+    left: 0;
+    z-index: 3; 
+}
+
+.app-image-2 {
+    top: 20%;
+    left: 20px;
+    z-index: 2; 
+}
+
+.app-image-3 {
+    top: 30%;
+    left: 40px;
+    z-index: 1;
+}
+
+.app-content img {
+    width: auto;
+    max-height: 100%; 
+    display: block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .footer-group{
@@ -402,8 +444,7 @@ header{
 .footer-left{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    align-items: start;
     text-align: center;
     flex: 1;
 }
