@@ -22,11 +22,11 @@ a{
 }
 
 header{
-    background-color: #fff;
     border-bottom: 1px solid #ddd;
 }
 
 .header-top{
+    background-color: #fff;
     display: flex;
     position: fixed;
     z-index: 999;
