@@ -71,8 +71,8 @@ header{
 .with-submenu .sub-menu{
     display: none;
     position: absolute;
-    top: 60px;
-    left: 912px;
+    top: 100%;
+    left: 0;
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 10px;
@@ -89,7 +89,7 @@ header{
     display: block;
     font-size: 10px;
     cursor: pointer;
-    text-align: left;
+    text-align: center;
     margin-bottom: 5px;
     text-decoration: none;
     padding: 5px 10px;
@@ -316,20 +316,25 @@ header{
     color: #333;
 }
 
-.app-text{
-    align-items: center;
-    display: flex; 
-    height: 400px;
-    padding: 100px 250px;
+.app-adver{
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    height: 400px;
     background-color: #fff7e6;
+}
+
+.app-text{
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
 }
 
 .app-text h2{
     font-size: 27px;
     color: #ff6f0f;
     font-weight: 700;
-    text-align: left;
     margin-bottom: 15px;
 }
 
@@ -337,8 +342,8 @@ header{
     font-size: 40px;
     color: #333;
     font-weight: 700;
-    text-align: left;
     margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 .app-button{
@@ -347,36 +352,43 @@ header{
 }
 
 .app-button a img{
-    width: 120px;
+    height: 40px;
 }
 
 .app-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 400px; 
     overflow: hidden;
 }
 
 .app-image-1, .app-image-2, .app-image-3 {
     position: absolute; 
+    transition: transform 0.3s ease;
 }
 
 .app-image-1 {
     top: 10%;
     left: 0;
     z-index: 3; 
+    transform: translate(-20%, 0);
 }
 
 .app-image-2 {
     top: 20%;
     left: 20px;
     z-index: 2; 
+    transform: translate(0, 0);
 }
 
 .app-image-3 {
     top: 30%;
     left: 40px;
     z-index: 1;
+    transform: translate(20%, 0);
 }
 
 .app-content img {
@@ -409,6 +421,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding-right: 25px;
 }
 
 .footer-section{
