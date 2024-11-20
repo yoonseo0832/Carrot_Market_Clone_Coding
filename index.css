@@ -321,7 +321,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 50px 100px;
-    height: 500px;
+    height: 400px;
     background-color: #fff7e6;
 }
 
@@ -362,7 +362,7 @@ header{
     justify-content: center;
     position: relative;
     width: 100%;
-    height: 500px; 
+    height: 400px; 
     overflow: hidden;
 }
 
@@ -378,14 +378,14 @@ header{
 }
 
 .app-image-2 {
-    top: -30%;
+    top: -60%;
     left: 580px;
     z-index: 2; 
 }
 
 .app-image-3 {
-    top: 60%;
-    left: 195px;
+    top: 68%;
+    left: 250px;
     z-index: 1;
 }
 
