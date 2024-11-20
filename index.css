@@ -123,59 +123,48 @@ header{
 }
 
 .header-bottom{
-    padding: 10px 20px;
+    padding: 20px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 65px;
+    gap: 15px;
     background-color: #fff;
-    justify-content: space-between;
-}
-
-.location{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.location a{
-    color: #555;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.location img{
-    width: 20px;
-    margin-left: 5px;
-}
-
-.search-container{
-    display: flex;
-    gap: 10px;
-    flex-grow: 1;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .search-others{
-    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
 }
+
 .search-bar{
     display: flex;
     align-items: center;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 15px;
     width: 800px;
     background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar-button{
-
+    padding-right: 10px;
+    border-right: 1px solid #ddd;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    color: #555;
 }
 .search-bar-button a{
-
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    flex: 1;
+    font-weight: bold;
 }
 
 .search-bar input{
@@ -184,6 +173,23 @@ header{
     flex: 1;
     padding: 10px;
     font-size: 14px;
+}
+
+.search-bar-input input::placeholder {
+    color: #bbb;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #aaa;
+    margin-left: 10px;
+}
+
+.search-icon img {
+    width: 16px;
+    height: 16px;
 }
 
 .popular-searches nav{
@@ -398,7 +404,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 0px 160px;
+    padding: 0px 800px;
 }
 .footer-section{
     display: flex;
@@ -431,35 +437,42 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
     gap: 20px;
     text-align: center;
 }
 
 .footer-logo img{
-    width: 24px;
+    width: 40px;
     margin-bottom: 10px;
 }
 
 .footer-social{
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
 }
+
 .footer-social a img{
-    width: 25px;
+    width: 30px;
     height: auto;
     transition: transform 0.3s ease;
+    border-radius: 50%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 .footer-social a img:hover{
     transform: scale(1.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .footer-bottom{
-    background-color: #fff;
-    padding: 20px 20px;
+    padding-right: 450px;
     text-align: start;
     font-size: 14px;
     color: #777;
     line-height: 1.6;
+    border-top: 1px solid #ddd;
+}
+.footer-bottom p{
+    padding-top: 10px;
 }
 .footer-links-2{
     margin-top: 15px;
@@ -472,37 +485,4 @@ header{
     font-size: 14px;
     color: #555;
     transition: color 0.3s;
-}
-
-@media (max-width: 768px) {
-    .footer-right-group {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footer-right {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .footer-links-1 {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .footer-left {
-        margin-top: 20px;
-    }
-
-    .footer-social {
-        justify-content: center;
-    }
-
-    .footer-bottom {
-        font-size: 12px;
-    }
 }
