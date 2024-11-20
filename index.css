@@ -260,7 +260,9 @@ header{
 
 .categories h2{
     font-size: 24px;
-    color: #333;
+    flex: 1;
+    top: 0;
+    color: #111;
     margin-bottom: 20px;
 }
 
@@ -273,17 +275,19 @@ header{
 }
 
 .category-item{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding-bottom: 100%;
+    width: 100%;
     border-radius: 5px;
     text-align: center;
 }
 
 .category-item img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
     border-radius: 50%;
     transition: transform 0.3s ease;
