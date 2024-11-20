@@ -80,7 +80,7 @@ header{
     z-index: 100;
 }
 
-.with-submenu .sub-menu a{
+.sub-menu a{
     display: grid;
     font-size: 12px;
     cursor: pointer;
