@@ -16,11 +16,6 @@ img{
     height: auto;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
 header{
     display: flex;
     width: 100%;
@@ -79,8 +74,8 @@ header{
 .sub-menu{
     display: block;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 80%;
+    left: 630px;
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 10px;
@@ -89,7 +84,7 @@ header{
 }
 
 .sub-menu a{
-    display: flex;
+    display: grid;
     font-size: 12px;
     cursor: pointer;
     text-align: center;
@@ -283,16 +278,16 @@ header{
     align-items: center;
     padding: 15px;
     border-radius: 5px;
-    transition: transform 0.3s ease;
     text-align: center;
 }
 
 .category-item img{
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 10px;
     border-radius: 50%;
-    background-color: #fff;
+    transition: transform 0.3s ease;
+    background-color: #f4f4f4;
     padding: 10px;
 }
 
