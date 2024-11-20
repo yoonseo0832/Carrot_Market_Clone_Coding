@@ -22,7 +22,9 @@ a{
 }
 
 header{
-    border-bottom: 1px solid #ddd;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
 
 .header-top{
@@ -36,13 +38,14 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-.logo svg{
+.header-top .logo svg{
     display: block;
 }
 
-nav{
+.header-top nav{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -52,6 +55,7 @@ nav{
     margin: 0 10px;
     color: #111;
     font-size: 16px;
+    font-weight: bold;
     position: relative;
     text-decoration: none;
 }
@@ -73,7 +77,7 @@ nav{
 }
 
 .sub-menu{
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -130,6 +134,9 @@ nav{
     padding: 10px 20px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
     justify-content: space-between;
 }
 
@@ -152,9 +159,7 @@ nav{
 
 .search-container{
     display: flex;
-    padding-top: 6px;
-    height: 120px;
-    position: relative;
+    width: 100%;gap: 10px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -165,8 +170,9 @@ nav{
     align-items: center;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     width: 60%;
+    height: 800px;
     background-color: #fff;
 }
 
@@ -174,7 +180,8 @@ nav{
     border: none;
     outline: none;
     flex: 1;
-    padding: 5px;
+    padding: 10px;
+    font-size: 14px;
 }
 
 .search-icon img{
@@ -198,6 +205,7 @@ nav{
 .popular-searches nav a:hover{
     text-decoration: underline;
 }
+
 .main-contianer{
     width: 100%;
     max-width: 1200px;
