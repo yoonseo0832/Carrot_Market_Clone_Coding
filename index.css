@@ -64,7 +64,15 @@ header{
     color: #111;
 }
 
-.with-submenu .sub-menu{
+.with-submenu{
+    position: relative;
+}
+
+.with-submenu:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu{
     display: none;
     position: absolute;
     top: 100%;
@@ -72,26 +80,19 @@ header{
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 100;
-}
-
-.with-submenu:hover .sub-menu{
-    display: block;
+    width: max-content;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .sub-menu a{
-    display: grid;
-    font-size: 12px;
+    display: block;
+    font-size: 14px;
     cursor: pointer;
-    text-align: center;
+    text-align: left;
     margin-bottom: 5px;
     text-decoration: none;
     color: #333;
-}
-
-.header-top nav a .with-submenu:hover + .sub-menu{
-    display: block;
 }
 
 .sub-menu a:hover{
@@ -123,7 +124,8 @@ header{
 }
 
 .header-bottom{
-    padding: 20px 0px;
+    padding-top: 100px;
+    padding-left: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -223,7 +225,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px 250px;
-    background-color: #fff7e6;
+    background-color: #fff1aa;
 }
 
 .banner-text{
@@ -314,8 +316,8 @@ header{
 
 .app-text{
     text-align: left;
-    height: 300px;
-    padding: 90px 36px;
+    height: 400px;
+    padding: 100px 250px;
     background-color: #fff7e6;
 }
 
@@ -341,50 +343,6 @@ header{
     width: 120px;
 }
 
-.app-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-    gap: 20px;
-    width: 100%;
-}
-
-.app-content > div{
-    max-width: 250px;
-    height: 400px;
-    flex: 0 0 30%;
-    background-color: #f4f4f4;
-    overflow: hidden;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-.app-content .app-image-1{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.app-content .app-image-2{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.app-content .app-image-3{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 .footer-right-group{
     display: flex;
     justify-content: space-between;
