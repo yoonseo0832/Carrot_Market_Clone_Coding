@@ -24,10 +24,10 @@ header{
     z-index: 999;
     width: 1980px;
     top: 0;
-    width: 1400px;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 150px;
+    padding: 10px 240px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -104,7 +104,7 @@ header{
     cursor: pointer;
     position: relative;
     border-radius: 4px;
-    padding: 5px 10px;
+    padding: 0px 2px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -158,14 +158,24 @@ header{
     justify-content: center;
 }
 
+.search-others{
+    padding:0;
+}
 .search-bar{
     display: flex;
     align-items: center;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
-    width: 1200px;
+    width: 800px;
     background-color: #fff;
+}
+
+.search-bar-button{
+
+}
+.search-bar-button a{
+
 }
 
 .search-bar input{
@@ -174,11 +184,6 @@ header{
     flex: 1;
     padding: 10px;
     font-size: 14px;
-}
-
-.search-icon img{
-    width: 16px;
-    cursor: pointer;
 }
 
 .popular-searches nav{
@@ -330,38 +335,59 @@ header{
     width: 120px;
 }
 
-.app-adver{
+.app-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 40px 20px;
+    overflow: hidden;
+    gap: 20px;
+    width: 100%;
 }
 
-.app-content{
-    width: 250px;
-    height: 300px;
+.app-content > div{
+    max-width: 250px;
+    height: 400px;
+    flex: 0 0 30%;
+    background-color: #f4f4f4;
     overflow: hidden;
     border-radius: 10px;
     position: relative;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-.app-content img{
+.app-content .app-image-1{
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    top: -353px;
-    left: 717px;
+    top: 0;
+    left: 0;
 }
-
+.app-content .app-image-2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.app-content .app-image-3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .footer-right-group{
     display: flex;
     justify-content: space-between;
     background-color: #f5f5f5;
     flex-wrap: wrap;
-    padding: 40px 20px;
+    padding-left: 400px;
     border-top: 1px solid #ddd;
 }
+
 .footer-right{
     display: flex;
     flex-wrap: wrap;
@@ -372,16 +398,23 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 0px 160px;
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .footer-links-1 h4{
     font-size: 16px;
     color: #333;
-    margin-bottom: 10px;
+    margin: 0;
     font-weight: bold;
 }
 .footer-links-1 ul{
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .footer-links-1 ul li{
     margin-bottom: 8px;
@@ -404,7 +437,7 @@ header{
 }
 
 .footer-logo img{
-    width: 120px;
+    width: 24px;
     margin-bottom: 10px;
 }
 
