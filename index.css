@@ -477,7 +477,7 @@ header{
 .footer-links-2{
     margin-top: 15px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 10px;
 }
