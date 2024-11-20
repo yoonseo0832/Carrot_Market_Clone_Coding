@@ -321,13 +321,14 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 50px 100px;
-    height: 400px;
+    height: 500px;
     background-color: #fff7e6;
 }
 
 .app-text{
     flex: 1;
     text-align: left;
+    padding-left: 76px;
     max-width: 500px;
 }
 
@@ -361,40 +362,39 @@ header{
     justify-content: center;
     position: relative;
     width: 100%;
-    height: 400px; 
+    height: 500px; 
     overflow: hidden;
 }
 
 .app-image-1, .app-image-2, .app-image-3 {
     position: absolute; 
-    transition: transform 0.3s ease;
+    
 }
 
 .app-image-1 {
-    top: 10%;
-    left: 0;
-    z-index: 3; 
-    transform: translate(-20%, 0);
+    top: 20%;
+    left: 270px;
+    z-index: 1; 
 }
 
 .app-image-2 {
-    top: 20%;
-    left: 20px;
+    top: -30%;
+    left: 580px;
     z-index: 2; 
-    transform: translate(0, 0);
 }
 
 .app-image-3 {
-    top: 30%;
-    left: 40px;
+    top: 60%;
+    left: 195px;
     z-index: 1;
-    transform: translate(20%, 0);
 }
 
 .app-content img {
-    width: auto;
+    width: 280px;
     max-height: 100%; 
     display: block;
+    border-radius: 30px;
+    border: 4px solid rgb(255, 111, 15);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
@@ -404,7 +404,7 @@ header{
     align-items: flex-start;
     background-color: #f5f5f5;
     padding: 20px;
-    padding-left: 400px;
+    padding-left: 350px;
     flex-wrap: wrap;
     border-top: 1px solid #ddd;
 }
@@ -413,6 +413,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    padding-right: 130px; 
     justify-content: flex-end;
     flex: 2;
 }
@@ -503,6 +504,7 @@ header{
     display: flex;
     gap: 10px;
 }
+
 .footer-links-2 a p{
     font-size: 14px;
     color: #555;
